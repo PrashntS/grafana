@@ -3,33 +3,33 @@ require.config({
   baseUrl: 'public',
 
   paths: {
-    config:                   'app/components/config',
-    settings:                 'app/components/settings',
-    kbn:                      'app/components/kbn',
-    store:                    'app/components/store',
-    'extend-jquery':          'app/components/extend-jquery',
-    lodash:                   'app/components/lodash.extended',
+    config:                    'app/components/config',
+    settings:                  'app/components/settings',
+    kbn:                       'app/components/kbn',
+    store:                     'app/components/store',
+    'extend-jquery':           'app/components/extend-jquery',
+    lodash:                    'app/components/lodash.extended',
 
-    text:                     'vendor/requirejs-text/text',
-    moment:                   'vendor/moment',
-    filesaver:                'vendor/filesaver',
-    ZeroClipboard:            'vendor/ZeroClipboard',
-    angular:                  'vendor/angular/angular',
-    'angular-route':          'vendor/angular-route/angular-route',
-    'angular-sanitize':       'vendor/angular-sanitize/angular-sanitize',
-    'angular-dragdrop':       'vendor/angular-native-dragdrop/draganddrop',
-    'angular-strap':          'vendor/angular-other/angular-strap',
-    'angular-ui':             'vendor/angular-ui/ui-bootstrap-tpls',
-    timepicker:               'vendor/angular-other/timepicker',
-    datepicker:               'vendor/angular-other/datepicker',
-    bindonce:                 'vendor/angular-bindonce/bindonce',
-    crypto:                   'vendor/crypto.min',
-    spectrum:                 'vendor/spectrum',
+    text:                      'vendor/requirejs-text/text',
+    moment:                    'vendor/moment',
+    filesaver:                 'vendor/filesaver',
+    ZeroClipboard:             'vendor/ZeroClipboard',
+    angular:                   'vendor/angular/angular',
+    'angular-route':           'vendor/angular-route/angular-route',
+    'angular-sanitize':        'vendor/angular-sanitize/angular-sanitize',
+    'angular-dragdrop':        'vendor/angular-native-dragdrop/draganddrop',
+    'angular-strap':           'vendor/angular-other/angular-strap',
+    'angular-ui':              'vendor/angular-ui/ui-bootstrap-tpls',
+    timepicker:                'vendor/angular-other/timepicker',
+    datepicker:                'vendor/angular-other/datepicker',
+    bindonce:                  'vendor/angular-bindonce/bindonce',
+    crypto:                    'vendor/crypto.min',
+    spectrum:                  'vendor/spectrum',
 
-    'lodash-src':             'vendor/lodash',
-    bootstrap:                'vendor/bootstrap/bootstrap',
+    'lodash-src':              'vendor/lodash',
+    bootstrap:                 'vendor/bootstrap/bootstrap',
 
-    jquery:                   'vendor/jquery/dist/jquery',
+    jquery:                    'vendor/jquery/dist/jquery',
 
     'jquery.flot':             'vendor/flot/jquery.flot',
     'jquery.flot.pie':         'vendor/flot/jquery.flot.pie',
@@ -43,8 +43,11 @@ require.config({
 
     modernizr:                 'vendor/modernizr-2.6.1',
 
-    'bootstrap-tagsinput':    'vendor/tagsinput/bootstrap-tagsinput',
-    'aws-sdk':                'vendor/aws-sdk/dist/aws-sdk.min',
+    'bootstrap-tagsinput':     'vendor/tagsinput/bootstrap-tagsinput',
+    'aws-sdk':                 'vendor/aws-sdk/dist/aws-sdk.min',
+
+    annotations:               'vendor/annotations',
+
   },
   shim: {
 
@@ -100,5 +103,9 @@ require.config({
     datepicker:             ['jquery', 'bootstrap'],
 
     'bootstrap-tagsinput':          ['jquery'],
+
+    annotations: {
+      deps: ['jquery']
+    },
   },
 });

@@ -13,6 +13,7 @@ define([
   'extend-jquery',
   'bindonce',
   'app/core/core',
+  'annotations',
 ],
 function (angular, $, _, appLevelRequire) {
   "use strict";

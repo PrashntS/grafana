@@ -21,6 +21,13 @@
 			</li>
 		</ul>
 
+		<ul class="tight-form-list">
+			<li class="submenu-item">
+				<a class="tight-form-item" onclick="Annotations.Helper.button_hook();" id = "grafana_annotations_btn">Start Annotations</a>
+			</li>
+		</ul>
+		<span id = "grafana_annotations"></span>
+
 		<ul class="tight-form-list pull-right" ng-if="dashboard.links.length > 0">
 			<dash-links-container links="dashboard.links"></dash-links-container>
 		</ul>
